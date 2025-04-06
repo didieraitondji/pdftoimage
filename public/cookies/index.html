@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cookies Policy - PDF2Image</title>
+    <link rel="stylesheet" href="./../output.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="./../assets/logo_PDF2Image_y.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --primary: #03045e;
+        --secondary: #023e8a;
+        --accent: #0077b6;
+        --light: #f8f9fa;
+        --highlight: #f0f7ff;
+      }
+
+      body {
+        line-height: 1.8;
+        color: #333;
+        font-family: "Inter", sans-serif;
+        background-color: #f5f7fa;
+      }
+
+      .container {
+        max-width: 1000px;
+        margin: 4rem auto;
+        padding: 3rem;
+        background: white;
+        border-radius: 12px;
+      }
+
+      h1,
+      h2,
+      h3 {
+        font-family: "Playfair Display", serif;
+        font-weight: 600;
+      }
+
+      h1 {
+        color: var(--primary);
+        font-size: 2.75rem;
+        margin-bottom: 2.5rem;
+        padding-bottom: 1rem;
+        border-bottom: 2px solid var(--secondary);
+        position: relative;
+      }
+
+      h1:after {
+        content: "";
+        position: absolute;
+        bottom: -2px;
+        left: 0;
+        width: 120px;
+        height: 4px;
+        background: var(--accent);
+      }
+
+      h2 {
+        color: var(--secondary);
+        font-size: 1.9rem;
+        margin-top: 3rem;
+        margin-bottom: 1.5rem;
+        padding-bottom: 0.5rem;
+        border-bottom: 1px solid #e0e0e0;
+      }
+
+      h3 {
+        color: var(--accent);
+        font-size: 1.5rem;
+        margin-top: 2.5rem;
+        margin-bottom: 1rem;
+      }
+
+      p,
+      li {
+        margin-bottom: 1.25rem;
+        color: #444;
+        font-size: 1.05rem;
+      }
+
+      ul,
+      ol {
+        padding-left: 2rem;
+        margin-bottom: 1.5rem;
+      }
+
+      li {
+        margin-bottom: 0.75rem;
+        position: relative;
+      }
+
+      ul li:before {
+        content: "•";
+        color: var(--accent);
+        font-weight: bold;
+        display: inline-block;
+        width: 1em;
+        margin-left: -1em;
+      }
+
+      .highlight {
+        background-color: var(--highlight);
+        padding: 1.5rem;
+        border-left: 4px solid var(--accent);
+        margin: 2rem 0;
+        border-radius: 0 8px 8px 0;
+      }
+
+      .highlight p {
+        margin-bottom: 0;
+        font-weight: 500;
+        color: var(--primary);
+      }
+
+      .last-updated {
+        font-style: italic;
+        color: #666;
+        margin-bottom: 3rem;
+        font-size: 0.95rem;
+      }
+
+      .back-to-home {
+        display: inline-flex;
+        align-items: center;
+        margin-top: 3rem;
+        color: var(--primary);
+        font-weight: 600;
+        text-decoration: none;
+        transition: all 0.3s ease;
+        padding: 0.75rem 1.5rem;
+        background-color: var(--light);
+        border-radius: 50px;
+        border: 1px solid #e0e0e0;
+      }
+
+      .back-to-home:hover {
+        text-decoration: none;
+        background-color: var(--highlight);
+        transform: translateY(-2px);
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+      }
+
+      .back-to-home i {
+        margin-right: 0.5rem;
+        transition: transform 0.3s ease;
+      }
+
+      .back-to-home:hover i {
+        transform: translateX(-3px);
+      }
+
+      .cookie-types {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        gap: 1.5rem;
+        margin: 2rem 0;
+      }
+
+      .cookie-card {
+        background: white;
+        border-radius: 8px;
+        padding: 1.5rem;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+        border: 1px solid #e0e0e0;
+        transition: transform 0.3s ease;
+      }
+
+      .cookie-card:hover {
+        transform: translateY(-5px);
+      }
+
+      .cookie-card h4 {
+        color: var(--secondary);
+        margin-bottom: 0.75rem;
+        font-size: 1.2rem;
+      }
+
+      .cookie-card p {
+        font-size: 0.95rem;
+        color: #555;
+      }
+
+      @media (max-width: 768px) {
+        .container {
+          padding: 2rem;
+          margin: 2rem 1rem;
+        }
+
+        h1 {
+          font-size: 2.25rem;
+        }
+
+        h2 {
+          font-size: 1.6rem;
+        }
+
+        .cookie-types {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Cookies Policy</h1>
+      <p class="last-updated">Last Updated: April 4, 2024</p>
+
+      <div class="highlight">
+        <p>
+          <strong
+            >This Cookies Policy explains how PDF2Image uses cookies and similar
+            technologies when you visit our website.</strong
+          >
+        </p>
+      </div>
+
+      <h2>1. What Are Cookies?</h2>
+      <p>
+        Cookies are small text files that are stored on your device when you
+        visit a website. They are widely used to make websites work more
+        efficiently, as well as to provide information to the website owners.
+      </p>
+
+      <h2>2. How We Use Cookies</h2>
+      <p>We use cookies for the following purposes:</p>
+      <ul>
+        <li>To ensure the proper functioning of our website</li>
+        <li>
+          To analyze how visitors use our site and improve their experience
+        </li>
+        <li>To remember your preferences and settings</li>
+        <li>For security purposes and to prevent fraud</li>
+      </ul>
+
+      <h2>3. Types of Cookies We Use</h2>
+      <div class="cookie-types">
+        <div class="cookie-card">
+          <h4>Essential Cookies</h4>
+          <p>
+            These are necessary for the website to function and cannot be
+            switched off. They are usually only set in response to actions you
+            take.
+          </p>
+        </div>
+        <div class="cookie-card">
+          <h4>Performance Cookies</h4>
+          <p>
+            These allow us to count visits and traffic sources so we can measure
+            and improve the performance of our site.
+          </p>
+        </div>
+        <div class="cookie-card">
+          <h4>Functional Cookies</h4>
+          <p>
+            These enable enhanced functionality and personalization, such as
+            remembering your preferences.
+          </p>
+        </div>
+      </div>
+
+      <h2>4. Third-Party Cookies</h2>
+      <p>
+        We may use services provided by third parties that set their own
+        cookies. These include:
+      </p>
+      <ul>
+        <li>
+          <strong>Google Analytics:</strong> For understanding how visitors
+          interact with our website
+        </li>
+        <li>
+          <strong>Cloudflare:</strong> For security and performance optimization
+        </li>
+      </ul>
+
+      <h2>5. Managing Cookies</h2>
+      <p>
+        You can control and/or delete cookies as you wish. Most web browsers
+        allow some control of cookies through browser settings. You can:
+      </p>
+      <ul>
+        <li>Delete all cookies already on your device</li>
+        <li>Set most browsers to prevent cookies from being placed</li>
+        <li>Use browser add-ons to manage cookie preferences</li>
+      </ul>
+      <p>
+        Note that if you disable cookies entirely, some features of our website
+        may not function properly.
+      </p>
+
+      <h2>6. Changes to This Policy</h2>
+      <p>
+        We may update this Cookies Policy from time to time. We will notify you
+        of any changes by posting the new policy on this page with an updated
+        "Last Updated" date.
+      </p>
+
+      <h2>7. Contact Us</h2>
+      <div class="highlight-box">
+        <p style="margin-bottom: 0">
+          <strong>Email:</strong> didier.tolomeaitondji@gmail.com<br />
+          <strong>Subject:</strong> "Privacy Policy Inquiry"
+        </p>
+      </div>
+
+      <a href="/" class="back-to-home">
+        <i class="bx bx-arrow-back"></i> Back to Home
+      </a>
+    </div>
+  </body>
+</html>
